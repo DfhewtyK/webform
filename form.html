@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css" media="screen">
+    <title>Formulario</title>
+</head>
+<body>
+   
+   <div>
+    <h1 id="titulo">Formulario</h1>
+    <p id="subtitle">Ensira seus dados</p>
+    <br>
+   </div>
+
+   <form>
+       <fieldset class="grupo">
+        <div class="campo">
+            <label for="Nome"><strong>Nome</strong></label>
+            <input type="text" name="Nome" id="Nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="Sobre nome"><strong>Sobre nome</strong></label>
+            <input type="text" name="Sobrenome" id="Sobrenome" required>
+        </div>
+       </fieldset >
+
+       <div class="campo">
+        <label for="Email"><strong>Email</strong></label>
+        <input type="email" name="Email" id="Email" required>
+       </div>
+
+       <div>
+        <label><strong>Selecione uma</strong></label>
+        <label>
+            <input type="radio" name="devweb" value="Desenvolvedor">Desenvolvedor
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="jornalista">jornalista
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Ator">Ator
+        </label>
+       </div>
+
+       <div>
+        <label><strong>Escolha seu Nivel</strong></label>
+        <select id="Escolher seu Nivel">
+            <option selected disabled value="">Selecionar</option>
+            <option>Nivel Inicial</option>
+            <option>Nivel Entermediario</option>
+            <option>Nivel Superior</option>
+        </select>
+       </div>
+
+       <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Selecionar seu Estado</strong></label><br><br>
+            <input type="checkbox" id="SaoPaulo" name="SaoPaulo" value="Sao Paulo">
+            <label for="SaoPaulo">Sao Paulo</label>
+            <input type="checkbox" id="Riodejaneiro" name="Riodejaneiro" value="Rio de janeiro">
+            <label for="Riodejaneiro">Rio de Janeiro</label>
+            <input type="checkbox" id="Piaui" name="Piaui" value="Piaui">
+            <label for="Piaui">Piaui</label>
+        </div>
+       </fieldset>
+
+       <div>
+        <br>
+        <label><strong>Um pouco sobre</strong></label>
+        <textarea row="8" style="width: 26em" id="Sobre" name="Sobre"></textarea>
+       </div>
+
+       <button type="submit" class="button"><strong>Enviar</strong></button>
+
+   </form>
+
+</body>
+</html>
